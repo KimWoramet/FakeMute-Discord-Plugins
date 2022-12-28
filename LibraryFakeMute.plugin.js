@@ -3,7 +3,7 @@
  * @description Gives other plugins utility functions and the ability to emulate v2.
  * @version 0.0.1
  * @author KimWoramet
- * @source https://www.facebook.com/KimWoramet555/
+ * @source https://github.com/KimWoramet/FakeMute-Discord-Plugins
  */
 
 /*@cc_on
