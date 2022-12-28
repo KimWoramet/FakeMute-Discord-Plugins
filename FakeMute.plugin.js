@@ -11,7 +11,7 @@ class ExampleLibraryPlugin {
 
 
     start() {
-        if (!global.ZeresPluginLibrary) return window.BdApi.alert("Library Missing",`The library plugin needed for ${this.getName()} is missing.<br /><br /> <a href="https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);
+        if (!global.ZeresPluginLibrary) return window.BdApi.alert("Library Missing",`The library plugin needed for ${this.getName()} is missing.<br /><br /> <a href="https://raw.githubusercontent.com/KimWoramet/FakeMute-Discord-Plugins/main/LibraryFakeMute.plugin.js" target="_blank">Click here to download the library!</a>`);
         ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), "LINK_TO_RAW_CODE");
         
         var text = new TextDecoder("utf-8");
@@ -22,12 +22,12 @@ WebSocket.prototype.send = function(data) {
         if (text.decode(data).includes("self_deaf")) {
             console.log("found mute/deafen");
             data = data.replace('"self_mute":false', 'NiceOneDiscord');
-            console.log("Activated");
+            console.log("Active");
         }
     }
     WebSocket.prototype.original.apply(this, [data]);
 }
-window.BdApi.alert("success",`now you can stop plugin!, After you turned ON the plugin , you cant join any other voice channels , for this you have to Reload discord!`);
+window.BdApi.alert("สำเร็จ",`แอบฟังให้สนุกพวกหน้าหี`);
 
     }
 
